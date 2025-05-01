@@ -1,0 +1,8 @@
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 70px 10px;
+    border-color: rgb(164, 60, 60);
+    padding: 10px;
+}
