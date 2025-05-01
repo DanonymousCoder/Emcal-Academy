@@ -1,2 +1,2 @@
-Emcal empire
+EmCal Academy
 An Educational website
