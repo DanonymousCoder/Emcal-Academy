@@ -4,8 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
+
+  <!-- Swiper -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link href="../CSS/Home.CSS" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <!-- Demo styles -->
+   <style>
+  
+    .swiper {
+      width: 100%;
+      position: relative ;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
 </head>
 <body>
   
@@ -13,14 +44,23 @@
     <div class="nav-bar">
 
       <div class="logo">
-        <img src="../pic/LogoMakerCa-1727696568810-removebg-preview.png" alt="">
+        <a href="../HTML/Home.html">
+          <img src="../pic/LogoMakerCa-1727696568810-removebg-preview.png" alt="">
+        </a>
       </div>
       
       <div class="nav-items">
         <ul>
           <button type="button" class="Explore">
-            <li><i class='bx bxs-hot'></i><p>Explore</p></li></button>  
-          <button type="button" class="Payment"><li><i class='bx bxs-wallet'></i><p>payment</p></li></button>
+            <li>
+              <i class='bx bxs-hot'></i><p>Explore</p>
+            </li>
+          </button>  
+          <button type="button" class="Payment">
+            <li>
+              <i class='bx bxs-wallet'></i><p>payment</p>
+            </li>
+          </button>
          <a href="../HTML/SIGNIN.HTML"> <button type="button" class="signup" ><li>signup</li></button></a>
          <a href="../HTML/LOGIN.HTML"><button type="button" class="login"><li>login</li></button></a>
         </ul>
@@ -31,18 +71,78 @@
 
   <main>
 
-    <div class="hero">
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"><img src="../pic/hero_1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="../pic/hero_2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="../pic/hero_3.jpeg" alt=""></div>
+    </div>
+   
+    <div class="left">
+      <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to succeed in a challenging college preparatory course of study. It is also important to us that our students understand, respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to contribute to our dynamic community.</p>
+    </div>
+
+   
+       <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+     <!-- 
+    <div class="swiper-pagination"></div>
+    -->
+
+  </div>
+
+    
+    
+     <div class="hero">
       <div class="left">
         <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to succeed in a challenging college preparatory course of study. It is also important to us that our students understand, respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to contribute to our dynamic community.</p>
       </div>
 
       <div class="right">
-        <img src="../pic/girl.png" class="girl">
+        <img src="../pic/girl.png" alt="">
       </div>
     </div>
+
+
     
-<script src="../JS/Home.JS"></script>
-<script src="../JS/authSystem.js"></script>
+    
+    <script src="../JS/Home.JS"></script>
+    <script src="../JS/authSystem.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+    <!--
+      Swiper JS
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
 </body>
 </html>
 
