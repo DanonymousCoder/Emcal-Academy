@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,21 @@
   <link href="../CSS/Home.CSS" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-   <!-- Demo styles -->
-   <style>
-  
+  <!-- Demo styles -->
+  <style>
     .swiper {
       width: 100%;
-      position: relative ;
+      position: relative;
+    }
+
+    .swiper .left {
+      position: absolute;
+      top: 50%;
+    }
+
+    .swiper-wrapper {
+      height: 100%;
+      position: relative;
     }
 
     .swiper-slide {
@@ -27,19 +37,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
     .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 600px;
       object-fit: cover;
     }
   </style>
 
 </head>
+
 <body>
-  
+
   <nav>
     <div class="nav-bar">
 
@@ -48,21 +60,27 @@
           <img src="../pic/LogoMakerCa-1727696568810-removebg-preview.png" alt="">
         </a>
       </div>
-      
+
       <div class="nav-items">
         <ul>
           <button type="button" class="Explore">
             <li>
-              <i class='bx bxs-hot'></i><p>Explore</p>
-            </li>
-          </button>  
-          <button type="button" class="Payment">
-            <li>
-              <i class='bx bxs-wallet'></i><p>payment</p>
+              <i class='bx bxs-hot'></i>
+              <p>Explore</p>
             </li>
           </button>
-         <a href="../HTML/SIGNIN.HTML"> <button type="button" class="signup" ><li>signup</li></button></a>
-         <a href="../HTML/LOGIN.HTML"><button type="button" class="login"><li>login</li></button></a>
+          <button type="button" class="Payment">
+            <li>
+              <i class='bx bxs-wallet'></i>
+              <p>payment</p>
+            </li>
+          </button>
+          <a href="../HTML/SIGNIN.HTML"> <button type="button" class="signup">
+              <li>signup</li>
+            </button></a>
+          <a href="../HTML/LOGIN.HTML"><button type="button" class="login">
+              <li>login</li>
+            </button></a>
         </ul>
       </div>
     </div>
@@ -72,32 +90,38 @@
   <main>
 
     <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"><img src="../pic/hero_1.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="../pic/hero_2.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="../pic/hero_3.jpeg" alt=""></div>
-    </div>
-   
-    <div class="left">
-      <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to succeed in a challenging college preparatory course of study. It is also important to us that our students understand, respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to contribute to our dynamic community.</p>
-    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../pic/math.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="../pic/math.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="../pic/math.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="../pic/math.jpeg" alt=""></div>
+      </div>
 
-   
-       <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-     <!-- 
+      <div class="left">
+        <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to
+          succeed in a challenging college preparatory course of study. It is also important to us that our students
+          understand,
+          respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to
+          contribute to our dynamic community.</p>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- 
     <div class="swiper-pagination"></div>
     -->
 
-  </div>
+    </div>
 
-    
-    
-     <div class="hero">
+
+
+    <div class="hero">
       <div class="left">
-        <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to succeed in a challenging college preparatory course of study. It is also important to us that our students understand, respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to contribute to our dynamic community.</p>
+        <p> EmCal Academy seeks students of good character who have exhibited both the motivation and ability to succeed
+          in a challenging college preparatory course of study. It is also important to us that our students understand,
+          respect, and embrace the philosophy of Gunston, and possess the talents, motivation, and interest to
+          contribute to our dynamic community.</p>
       </div>
 
       <div class="right">
@@ -106,33 +130,33 @@
     </div>
 
 
-    
-    
+
+
     <script src="../JS/Home.JS"></script>
     <script src="../JS/authSystem.js"></script>
 
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
 
     <!--
@@ -144,12 +168,5 @@
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-     

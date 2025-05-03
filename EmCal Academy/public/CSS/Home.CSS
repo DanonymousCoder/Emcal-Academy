@@ -1,10 +1,8 @@
-
-
-body{
-margin: 0;
-padding: 0;
-background-color: #FFFFFF;
-position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  position: relative;
 }
 
 nav {
@@ -29,12 +27,12 @@ a {
   height: 50px;
 }
 
-.nav-bar{
-width: 85%;
-display: flex;
-justify-content: space-between;
-margin: 0 ;
-align-items: center;
+.nav-bar {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
 }
 
 nav ul {
@@ -46,19 +44,19 @@ i {
   color: #008CBA;
 }
 
-.logo-img{
-width: 70px;
-height: 70px;
+.logo-img {
+  width: 70px;
+  height: 70px;
 }
 
-.nav-items ul{
+.nav-items ul {
 
-list-style-type: none;
-display: flex;
+  list-style-type: none;
+  display: flex;
 
 }
 
-.nav-items li{
+.nav-items li {
   display: flex;
   gap: .5em;
   align-items: center;
@@ -68,42 +66,43 @@ display: flex;
 }
 
 button {
-background-color:#008CBA ; 
-border: none;
-color: white;
-padding: 10px 8px;
-text-align: center;
-text-decoration: none;
-font-size: 16px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 4px 2px;
-transition-duration: 0.4s;
-cursor: pointer;
-border-radius: 8px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-button{
-background-color: white; 
-color: black; 
-border: 2px solid #008CBA;
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
 }
 
 button:hover {
-background-color: #008CBA;
-color: white;
+  background-color: #008CBA;
+  color: white;
 }
 
 button:hover i {
   color: #FFFFFF;
 }
 
-p{
+p {
   display: flex;
   justify-content: left;
 }
-img{
+
+img {
   display: flex;
   justify-content: right;
 }
@@ -118,11 +117,6 @@ main {
   margin-top: 20px;
 }
 
-
-.swiper img {
-  height: 600px !important;
-}
-
 .hero {
   width: 85%;
   display: flex;
@@ -132,8 +126,8 @@ main {
 }
 
 .swiper .left {
-  position: absolute;
-  z-index: 10000;
+  position: absolute !important;
+  height: 300px;
 }
 
 .swiper .left p {
@@ -143,4 +137,3 @@ main {
   letter-spacing: 1.5;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
