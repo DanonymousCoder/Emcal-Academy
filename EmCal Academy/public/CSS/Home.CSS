@@ -128,12 +128,17 @@ main {
 .swiper .left {
   position: absolute !important;
   height: 300px;
+  z-index: 1000;
+  width: 50%;
+  left: 70px;
 }
 
 .swiper .left p {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1.5;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 1.8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #1a222b;
+  font-weight: 700;
 }
